@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <title>logica programacao</title>
+  <head>
+    <script>
+      numero1 = parseInt(prompt("insira um numero:"), 10);
+      numero2 = parseInt(prompt("insira um numero:"), 10);
+      numero3 = parseInt(prompt("insira um numero:"), 10);
+      numero4 = parseInt(prompt("insira um numero:"), 10);
+
+      if (numero1 > numero2 && numero1 > numero3 && numero1 > numero4) {
+        maior = numero1
+      }
+      else if (numero2 > numero1 && numero2 > numero3 && numero2 > numero4){
+        maior = numero2
+      }
+      else if (numero3 > numero2 && numero3 > numero1 && numero3 > numero4){
+        maior = numero3
+      }
+      else if (numero4 > numero2 && numero4 > numero3 && numero4 > numero1){
+        maior = numero4
+      }
+      
+      alert("o primeiro numero foi " + numero1 + ", o maior numero foi " + maior + ", e o ultimo numero foi  " + numero4)
+
+    </script>
+  </head>
+</html>
