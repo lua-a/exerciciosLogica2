@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>exercicios logica 2</title>
+    <script>
+      var numeroA = parseInt(prompt("insira um numero:"));
+      var numeroB = parseInt(prompt("insira um numero diferente:"));
+      var numeroC = parseInt(prompt("insira um numero diferente:"));
+      
+      if (numeroA > numeroB) {
+        if (numeroB > numeroC) {
+          alert(numeroA + numeroB)
+        }
+        else {
+          alert(numeroA + numeroC)
+        }
+      }
+      else if (numeroB > numeroA){
+        if (numeroA > numeroC){
+          alert(numeroB + numeroA)
+        }
+        else {
+          alert(numeroB + numeroC)
+        }
+      } 
+      else if (numeroC > numeroA) {
+        if (numeroA > numeroB) {
+          alert (numeroC + numeroA)
+        }
+        else {
+          alert(numeroC + numeroB)
+        }
+      }
+    </script>
+  </head>
+</html>
