@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <title>logica programacao</title>
+  <head>
+    <script>
+      var fim = 0;
+      var soma = 0;
+      var lista = [];
+      
+      while (fim < 6) {
+        numero = parseInt(prompt("insira um numero:"))
+        if (numero < 72){
+          soma += numero
+          lista.push(numero)
+          fim += 1
+        }
+        else {
+          lista.push(numero)
+          fim += 1
+        }
+      }
+
+      alert("os numeros dados foram " + lista + " a soma dos menores de 72 foi " + soma);
+    </script>
+  </head>
+</html>
