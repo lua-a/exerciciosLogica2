@@ -1,0 +1,28 @@
+<!DOCTYPEhtml>
+<html>
+  <title>logica programacao</title>
+  <head>
+    <script>
+      var fim = 0;
+      var soma = 0;
+      
+      while (fim < 4){
+        var numero = parseInt(prompt("insira a nota:"))
+        if (numero >= 0 && numero <= 10) {
+          soma += numero
+          fim += 1
+        }
+        else {
+          fim += 1 
+        }
+      }
+      
+      if (soma / 4 >= 5) {
+        alert("voce passou no teste")
+      }
+      else {
+        alert("tente novamente")
+      }
+    </script>
+  </head>
+</html>
