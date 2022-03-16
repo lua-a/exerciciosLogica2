@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPEhtml>
 <html>
-  <title>logica programacao</title>
+  <title> logica programacao </title>
   <head>
     <script>
-      fim = 0;
-      soma = 0;
+      var fim  =  0 ;
+      var soma  =  0 ;
+      var lista = [];
       
-      while (fim < 10) {
-        numero = parseInt(prompt("insira um numero:"))
+      while  (fim  <  10)  {
+        var numero  =  parseInt(prompt( "insira um numero:"))
         soma += numero
         fim += 1
-        alert(numero)
+        lista.push(numero)
       }
-
-      alert(soma / fim);
+      alert("os numeros dados foram " + lista + " e a media foi " + soma / fim) ;
     </script>
   </head>
 </html>
