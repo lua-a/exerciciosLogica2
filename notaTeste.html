@@ -5,19 +5,23 @@
     <script>
       var fim = 0;
       var soma = 0;
+      var lista = [];
       
       while (fim < 4){
         var numero = parseInt(prompt("insira a nota:"))
         if (numero >= 0 && numero <= 10) {
           soma += numero
+          lista.push(numero)
           fim += 1
         }
         else {
-          fim += 1 
+          fim += 1
         }
       }
       
-      if (soma / 4 >= 5) {
+      total = lista.length
+      
+      if (soma / total  >= 5) {
         alert("voce passou no teste")
       }
       else {
