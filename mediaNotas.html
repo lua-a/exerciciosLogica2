@@ -1,0 +1,24 @@
+<!DOCTYPEhtml>
+<html>
+  <title>logica programacao</title>
+  <head>
+    <script>
+      var fim = 0;
+      var media = 0;
+      
+      while (fim < 4){
+        var numeroA = parseInt(prompt("insira a nota da primeira avaliacao:"))
+        var numeroB = parseInt(prompt("insira a nota da segunda avaliacao:"))
+        media = (numeroA + numeroB) / 2
+        if (media >= 6){
+          alert("a sua media foi " + media + ", PARABÉNS! Você foi aprovado!")
+          fim ++
+        }
+        else{
+          alert("a sua media foi " + media)
+          fim ++
+        }
+      }
+    </script>
+  </head>
+</html>
