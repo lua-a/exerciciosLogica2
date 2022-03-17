@@ -1,0 +1,48 @@
+<!DOCTYPEhtml>
+<html>
+  <title>logica programacao</title>
+  <head>
+    <script>
+      var provaA = parseInt(prompt("insira a nota:"));
+      var provaB = parseInt(prompt("insira a nota:"));
+      var provaC = parseInt(prompt("insira a nota:"));
+           
+      if (provaC < provaB && provaC < provaA){
+        var media = (provaA + provaB) / 2
+        if (media >= 6) {
+          alert("sua media foi " + media + ", Aprovado")
+        }
+        else if (media < 3){
+          alert("sua media foi " + media + ", Reprovado")
+        }
+        else {
+          alert("sua media foi " + media + ", Exame")
+        }
+      }
+      else if (provaB < provaC && provaB < provaA){
+        var media = (provaA + provaC) / 2
+        if (media >= 6) {
+          alert("sua media foi " + media + ", Aprovado")
+        }
+        else if (media < 3){
+          alert("sua media foi " + media + ", Reprovado")
+        }
+        else {
+          alert("sua media foi " + media + ", Exame")
+        }
+      }
+      else if (provaA < provaC && provaA < provaB){
+        var media = (provaC + provaB) / 2
+        if (media >= 6) {
+          alert("sua media foi " + media + ", Aprovado")
+        }
+        else if (media < 3){
+          alert("sua media foi " + media + ", Reprovado")
+        }
+        else {
+          alert("sua media foi " + media + ", Exame")
+        }
+      }
+    </script>
+  </head>
+</html>
