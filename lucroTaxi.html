@@ -1,0 +1,18 @@
+<!DOCTYPEhtml>
+<html>
+  <title>logica programacao</title>
+  <head>
+    <script>
+      var preco = 2.90;
+      var kmInicio = parseInt(prompt("odômetro inicio do dia:"));
+      var kmFim = parseInt(prompt("odômetro fim do dia:"));
+      var combustivelGasto = parseInt(prompt("combustivel gasto:"));
+      var valorRe = parseInt(prompt("valor recebido:"));
+      
+      var mediaCons = (kmFim - kmInicio) / combustivelGasto
+      var lucro = valorRe - (combustivelGasto * preco)
+
+      alert("a media de combustivel foi de " + mediaCons + " e o lucro foi de " + lucro)
+    </script>
+  </head>
+</html>
