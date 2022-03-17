@@ -1,0 +1,17 @@
+<!DOCTYPEhtml>
+<html>
+  <title>logica programacao</title>
+  <head>
+    <script>
+      var comprimentoPista = parseInt(prompt("comprimento da pista:"));
+      var numeroVoltas = parseInt(prompt("numero de voltas:"));
+      var consumoCombustivel = parseInt(prompt("consumo do combustivel:"));
+      
+      var kmPorVoltas = comprimentoPista / numeroVoltas
+      var litros = consumoCombustivel * kmPorVoltas  
+      var litrosTotal = consumoCombustivel * comprimentoPista 
+
+      alert("o numero minimo para cada reabastecimento e de " + litros + " litros, " + " chegando ao total de " + litrosTotal + " litros.")
+    </script>
+  </head>
+</html>
