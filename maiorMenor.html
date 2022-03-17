@@ -1,0 +1,25 @@
+<!DOCTYPEhtml>
+<html>
+  <title>logica programacao</title>
+  <head>
+    <script>
+      var fim = 0
+      var maior = 0
+      numero = parseInt(prompt("insira um numero:"));
+      menor = numero
+     
+      while (fim < 19){
+        if (numero > maior){
+          var maior = numero
+        }
+        else if (numero < menor){  
+          var menor = numero
+        }
+        numero = parseInt(prompt("insira um numero:"));
+        fim ++
+      }
+      alert("o maior numero foi " + maior + " e o menor foi " + menor)
+
+    </script>
+  </head>
+</html>
