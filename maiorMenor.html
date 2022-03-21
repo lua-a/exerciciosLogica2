@@ -3,19 +3,22 @@
   <title>logica programacao</title>
   <head>
     <script>
-      var fim = 0
-      var maior = 0
-      numero = parseInt(prompt("insira um numero:"));
-      menor = numero
-     
+      var fim = 0;
+      var menor = 0;
+      var maior = 0;
+      
       while (fim < 19){
+        numero = parseInt(prompt("insira um numero:"));
+        if (fim == 0){
+          menor = numero
+          maior = numero
+        }
         if (numero > maior){
-          var maior = numero
+          maior = numero
         }
         else if (numero < menor){  
-          var menor = numero
+          menor = numero
         }
-        numero = parseInt(prompt("insira um numero:"));
         fim ++
       }
       alert("o maior numero foi " + maior + " e o menor foi " + menor)
